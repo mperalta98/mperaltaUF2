@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">mperaltaUF2</string>
+    <string name="nombre_de_la_carta">Nombre Carta</string>
+    <string name="escribe_nombre_aqui">Escribe nombre aqui</string>
+    <string name="tipo_carta">Tipo Carta</string>
+    <string name="ej_robot_bestia">Ej: Robot, Bestia...</string>
+    <string name="imgpreview">imgPreview</string>
+    <string name="publicar">publicar</string>
+    <string name="sign_in">SIGN IN</string>
+</resources>

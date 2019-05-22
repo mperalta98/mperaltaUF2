@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "536144098582",
+    "firebase_url": "https://mperaltauf2.firebaseio.com",
+    "project_id": "mperaltauf2",
+    "storage_bucket": "mperaltauf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536144098582:android:92864cd5c6119433",
+        "android_client_info": {
+          "package_name": "com.example.crisp.mperaltauf2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536144098582-v361i11487496u61hsnk80ha99nq9ml8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqgYh3-q3XYsR9LyAwWhoInTVXfb1om0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536144098582-v361i11487496u61hsnk80ha99nq9ml8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
