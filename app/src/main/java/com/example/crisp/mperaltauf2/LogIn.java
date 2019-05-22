@@ -14,6 +14,8 @@ import java.util.Arrays;
 public class LogIn extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 123;
+    AuthUI.IdpConfig google = new AuthUI.IdpConfig.GoogleBuilder().build();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,7 @@ public class LogIn extends AppCompatActivity {
     void comeIn(){
         FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         if (firebaseUser != null) {
-            startActivity(new Intent(this, WelcomeActivity.class));
+            startActivity(new Intent(this, MainActivity.class)); //TODO: AQUI TENIA PUESTA LA WELCOME ACTIVITY
             finish();
         }
     }
@@ -42,8 +44,7 @@ public class LogIn extends AppCompatActivity {
         startActivityForResult(
                 AuthUI.getInstance()
                         .createSignInIntentBuilder()
-                        .setAvailableProviders(Arrays.asList(
-                                new AuthUI.IdpConfig.GoogleBuilder().build()))
+                        .setAvailableProviders(Arrays.asList(google))
                         .build(),
                 RC_SIGN_IN);
     }
