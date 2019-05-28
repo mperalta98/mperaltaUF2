@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.google.android.gms.tasks.Continuation;
@@ -25,7 +26,8 @@ public class NewCardsActivity extends AppCompatActivity {
 
     static final int RC_IMG_PICK = 9000;
 
-    public Button btn_public, btn_img;
+    public Button btn_public;
+    public ImageButton btn_img;
     public EditText new_title, new_context;
     public String title_string, context_string;
     public DatabaseReference mRef;
@@ -37,6 +39,7 @@ public class NewCardsActivity extends AppCompatActivity {
     Card card;
     boolean new_card = true;
     boolean card_image = false;
+
 
 
     @Override
@@ -79,14 +82,14 @@ public class NewCardsActivity extends AppCompatActivity {
                                 new_card = false;
                                 downloadUri = task.getResult().toString();
                                 card = new Card(id,title_string,context_string,downloadUri);
-                                mRef.child("Cards").child(id).setValue(card);
+                                mRef.child("Posts").child(id).setValue(card);
                             }
                         }
                     });
                 }
                 if(new_card){
                     card = new Card(id,title_string,context_string,downloadUri);
-                    mRef.child("Cards").child(id).setValue(card);
+                    mRef.child("Posts").child(id).setValue(card);
                 }
                 finish();
             }

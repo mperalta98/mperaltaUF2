@@ -35,7 +35,7 @@ class CardsRecyclerAdapter extends RecyclerView.Adapter<CardsRecyclerAdapter.Car
 
         holder.cardTitle.setText(card.title);
         holder.cardDesc.setText(card.description);
-        GlideApp.with(holder.constraintLayout.getContext()).load(card.img).circleCrop().into(holder.img);
+        GlideApp.with(holder.constraintLayout.getContext()).load(card.img).into(holder.img);
         holder.rmv.setOnClickListener(new View.OnClickListener() {
             @Override
              public void onClick(View v) {

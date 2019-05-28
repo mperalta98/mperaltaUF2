@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.crisp.mperaltauf2">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +13,7 @@
         android:allowBackup="true">
         <activity android:name=".MainActivity"/>
         <activity android:name=".Card" />
-        <activity android:name=".LogIn" >
+        <activity android:name=".LogInActivity" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 

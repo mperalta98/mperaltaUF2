@@ -1,13 +1,11 @@
 package com.example.crisp.mperaltauf2;
 
-import android.support.v7.app.AppCompatActivity;
-
 import com.google.firebase.database.Exclude;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Card extends AppCompatActivity {
+public class Card {
     public String id;
     public String title;
     public String description;

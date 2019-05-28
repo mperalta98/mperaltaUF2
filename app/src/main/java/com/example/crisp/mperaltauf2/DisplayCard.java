@@ -36,7 +36,7 @@ public class DisplayCard extends AppCompatActivity {
         Intent intent = getIntent();
         String id = intent.getExtras().getString("id");
 
-        mRef = FirebaseDatabase.getInstance().getReference().child("Cards").child(id);
+        mRef = FirebaseDatabase.getInstance().getReference().child("Posts").child(id);
         mRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
