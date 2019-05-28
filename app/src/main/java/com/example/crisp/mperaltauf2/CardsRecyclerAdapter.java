@@ -81,7 +81,7 @@ class CardsRecyclerAdapter extends RecyclerView.Adapter<CardsRecyclerAdapter.Car
             notifyItemRemoved(position);
             notifyItemRangeChanged(position, list.size());
             mRef = FirebaseDatabase.getInstance().getReference();
-            mRef.child("Cards").child(card.id).removeValue();
+            mRef.child("Posts").child(card.id).removeValue();
     }
 }
 
